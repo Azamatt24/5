@@ -4,14 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>индексный документ</title>
+    <style>
+        body {
+            background-image: url(images/jse.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img-scale {
+            float: left;
+            opacity: 50%;
+        }
+        .img-scale2 {
+ display: inline-block; /* Строчно-блочный элемент */
+ overflow: hidden; /* Скрываем всё за контуром */
+ position: relative;
+ margin: 50px;
+ }
+ .img-scale2 img {
+ transition: 1s; /* Время эффекта */
+ display: block; /* Убираем небольшой отступ снизу */
+ }
+ .img-scale2 img:hover {
+ transform: scale(1.2); /* Увеличиваем масштаб */
+ }
+ .text {
+
+position: absolute;
+
+bottom: 10%;
+
+text-transform: uppercase;
+
+color: #c9c9c9;
+
+width: 300px;
+
+}
+
+.text span {
+
+font: bold 24px/44px Helvetica, Sans-Serif;
+
+background: #00000094;
+
+padding: 8px;
+
+}
+.container-video{
+    display: inline-block;
+}
+    </style>
 </head>
 <body>
+
     <a href="text.html">Перейти к тексту
 
     </a>
     <p> <a href="mypage.html">Моя страничка
         
     </a></p>
+   <p>1. ОБЩИЕ СВЕДЕНИЯ О CSS
+    CSS (Cascading Style Sheets - Каскадные таблицы стилей) - это 
+    набор правил оформления и форматирования HTML страницы, 
+    позволяющий определять свойства элементов HTML для целого 
+    документа. 
+    В CSS Вы один раз описываете характеристики объекта и 
+    связываете объект со стилем. Для того, чтобы поменять характеристики 
+    объекта достаточно изменить описание стиля.
+    CSS (/siːɛsɛs/ англ. Cascading Style Sheets — каскадные таблицы 
+    стилей) — формальный язык описания внешнего вида документа, 
+    написанного с использованием языка разметки.
+    Преимущественно используется как средство описания, 
+    оформления внешнего вида веб-страниц, написанных с помощью 
+    языков разметки HTML и XHTML.
+    CSS используется создателями веб-страниц для задания цветов, 
+    шрифтов, расположения отдельных блоков и других аспектов 
+    представления внешнего вида этих веб-страниц. <img src="images/jsi.webp" alt="Картинка" class="img-scale">
+
+</p>
+<div class="img-scale2">
+    <img src="images/5.jpg" alt="Картинка" width="500px" height="1000px">
+    <div class="text"><p>Основной целью разработки CSS являлось разделение описания 
+        логической структуры веб-страницы (которое производится с помощью 
+        HTML или других языков разметки) от описания внешнего вида этой 
+        веб-страницы (которое теперь производится с помощью формального 
+        языка CSS). Такое разделение может увеличить доступность документа, 
+        предоставить большую гибкость и возможность управления его 
+        представлением, а также уменьшить сложность и повторяемость в 
+        структурном содержимом.
+        История создания и развити</p></div>
+    </div>
+    <div class="container-video">
+        <div class="movie-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fn_JrXerhUg" frameborder="0" allow="accelerometer;
+             <autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+</div>
 </body>
 </html>
