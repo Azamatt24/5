@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        form {
+            background-color: #FFFF99;
+            width: 60%;
+            height: 100%;
+            border-radius: 10%;
+            padding: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+        .heading {
+            text-align: center;
+            color: #A25F2A;
+            font-size: 26px;
+        }
+        .age {
+            text-align: center;
+        }
+       input {
+        display: block;
+       margin: 0 auto;
+       }
+       label{
+        text-align: center;
+        margin-left: 100px;
+       }
+       .text-button, .text-button2, .tele{
+        border: 1px solid #A2231D;
+        padding: 20px;
+        margin: 5px;
+        border-radius: 15%;
+       }
+    </style>
+</head>
+<body>
+ 
+   <form method="post" >
+    <div class="heading"> Форма-анкета службы занятости</div> 
+    <label for="n2">Имя<INPUT TYPE="TEXT" id="n2" NAME="f1" SIZE="15" MAXLENGTH="50"></label>
+    <label for="sn2">Фамилия:<INPUT id="sn2" TYPE="TEXT" NAME="f1" SIZE="15" MAXLENGTH="7"></label>
+        <label for="tn2">Отчество:<INPUT id="tn2" TYPE="TEXT" NAME="f1" SIZE="15" MAXLENGTH="7"></label>   
+   <div class="age">Введите ваш возраст </div><label for="r1">меньше 15</label>
+        <input type="radio" id="r1" name="r1" value="first" > 
+        <label for="r2"> 15-25</label><input TYPE="radio" id="r2" name="r1" value="second" checked> 
+            <label for="r3">26-35</label> <INPUT TYPE="radio" id="r3" NAME="r1" VALUE="third"> 
+                <label for="r4"> 36-60 </label><INPUT TYPE="radio" id="r4" NAME="r1" VALUE="fourth"> 
+                    <label for="r5"> старше 60</label> <INPUT TYPE="radio" id="r5" NAME="r1" VALUE="fifth"> 
+                    </div> 
+                    <div class="tele">
+                    <label for="e">емаил <input type="email" id="e"></label>
+           <label for="t">контактный телефон <input type="tel" id="t"></label></div>
+           <div class="age">Семейное положение</div>
+           <label for="ch1"> холост</label><input TYPE="checkbox" id="ch1" name="ch1" value="second" checked>
+           <label for="ch2">женат</label> <INPUT TYPE="checkbox" id="ch2" NAME="ch2" VALUE="third"
+           </div>
+           <div class="text-button">
+            <label for="s2">специальность<INPUT TYPE="TEXT" id="s2" NAME="f1" SIZE="15" MAXLENGTH="50"></label>
+                <label for="uz">учебное заведение<INPUT TYPE="TEXT" id="uz" NAME="f1" SIZE="15" MAXLENGTH="50"></label>
+            <label for="start">год окончания:</label>
+           
+            <input type="date" id="start" name="trip-start"
+                   value="2018-07-22"
+                   min="2000-01-01" max="2018-12-31">
+                </div>
+                <div class="text-button2">
+                   <label for="tentacles">Общий стаж:</label>
+
+                   <input type="number" id="tentacles" name="tentacles"
+                          min="10" max="100">
+                          <label for="d2">последнее место работы и должность<INPUT TYPE="TEXT" id="d2" NAME="f1"
+                             SIZE="15" MAXLENGTH="50"></label> </div>
+    <label for="pnu">Профессиональные навыки и умения:<textarea id="pnu" NAME="comm1" ROWS=5 COLS=50></textarea>
+    </label>
+    <input type="submit" value="Послать запрос">
+    <input type="reset" value="Очистить форму">
+  
+    </form> 
+</body>
+</html>
