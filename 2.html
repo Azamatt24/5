@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Удаляющееся изображение</title>
+<SCRIPT>
+let h=200 
+function succpict()
+{if (h<700)
+ {h=h+10
+ document.images[0].height=h
+ setTimeout("succpict()",500) 
+ }
+ } 
+</SCRIPT>
+</head><body>
+<H4>При наведении курсора мыши на рисунок
+изображение начинает удаляться от зрителя.</H4> 
+<IMG src="images/5.jpg" height=200 onMouseOver="succpict()">
+</body>
+</html>
