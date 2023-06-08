@@ -1,0 +1,65 @@
+<HTML><HEAD><title>Возвращаемое значение функции</title>
+    <SCRIPT>
+    function msgot()
+    { window.status="неверно введены данные";
+    alert('Проверьте правильность введенных оценок')
+    window.status=""}
+    //Функция sumball() вычисляет сумму баллов
+    function sumball()
+    {let s=0 // начальное значение суммы 
+    // В переменные a1, a2, a3, a4 записываем данные из полей ввода
+    let a1=document.form1.num1.value
+    let a2=document.form1.num2.value
+    let a3=document.form1.num3.value
+    let a4=document.form1.num4.value
+    //Проверяем, есть ли значения, не попадающие в диапазон от 2 до 5
+    // пара символов || - логическое ИЛИ
+    // если такие есть – в окне alert выйдет сообщение от функции msgot()
+    //и в ответе появится 0 
+    if (a1==""){
+    msgot()
+return s
+    }
+    if(a2==""){
+        msgot()
+        return s
+    }
+    if(a3==""){
+        msgot()
+        return s
+    }
+    if(a4==""){
+        msgot()
+        return s
+    }}
+    function validphone(phone)
+    {
+        
+    len=phone.length
+    digits="0123456789"
+    if(len != 7 && len != 9)
+    {alert("Неверное количество знаков в номере")
+    document.form1.phone.focus()}
+    for(i=0; i<3; i++)
+    {if (digits.indexOf(phone.charAt(i))<0)
+    {alert("Это должны быть цифры")
+    document.dataentry.phone.focus()
+    break}
+    }
+    }
+    //--> SCRIPT>
+    </script>
+    </HEAD><BODY bgcolor="F8F8FF">
+      
+
+    <FORM name="form1">
+        <p> ведите оценки и нажмите кнопку Вычислить</p> 
+    Имя1: <INPUT type="text" name="num1" size=2><br>
+    Фамилия2: <INPUT type="text" name="num2" size=2><br>
+    password3: <INPUT type="password" name="num3" size=2><br>
+        возраст4: <INPUT type="number" name="num4" size=2><br>  
+            Введите номер телефона (ххх-хх-хх):<br>
+            <INPUT TYPE="text" NAME="phone" SIZE=10 >
+           <INPUT TYPE="button" VALUE="Отправить" 
+            onClick="validphone(phone.value)">
+    <INPUT type="reset"></FORM></BODY></HTML>
