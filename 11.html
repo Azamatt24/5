@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html> <head> <script>
+    function submail(){
+        if(x<=16){
+        alert("выраженный дефицит тела")
+    }
+    if((x>16)&&(x<=18.5)){
+        alert("недостаточная дефицит массы тела")
+    }
+    if((x>18.5)&&(x<=25)){
+        alert("норма")
+    }
+    if((x>25)&&(x<=30)){
+        alert("ожирение первой степени")
+    }
+    if((x>30)&&(x<=35)){
+        alert("ожирение второй степени")
+    }
+    if((x>35)&&(x<=40)){
+        alert("ожирение третьей степени")
+    }
+    }
+function validate(){
+    let x=0
+    let y=Number(document.a.w.value)
+    let z=Number(document.a.h.value)
+    if (y==""){
+        alert("введите вес")
+    }
+    
+    if (z==""){
+        alert("введите рост")
+    }
+    else{
+        x=y+z*z
+       if(x){
+        submail()
+       }
+       
+    }
+   
+}
+
+</script> </head>
+</head>
+<body>
+<form name="a" method="get">
+   <label>imt</label> <input type="text" name="imt">
+   <label>weight</label> <input type="text" name="w">
+   <label>height</label> <input type="text" name="h">
+   <input type="submit" value="вычислить" onclick="document.a.imt.value=validate()">
+</form>
+</body>
+</html>
